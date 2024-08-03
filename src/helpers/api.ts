@@ -29,7 +29,7 @@ export const checkAuthStatus = async () => {
 };
 
 export const fetchAllChats = async () => {
-  const res = await axios.get("/chat/all-chats", {withCredentials: true});
+  const res = await axios.get("/chat/all-chats");
   if (res.status !== 200) {
     throw new Error("Unable to get chats");
   }

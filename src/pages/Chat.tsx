@@ -36,7 +36,7 @@ const Chat = () => {
     if (!auth?.isLoggedIn) {
       return navigate("/login")
     }
-  }, [auth, navigate]);
+  }, [auth]);
 
   const handleDelete = async () => {
     try {
